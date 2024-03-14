@@ -1,0 +1,126 @@
+                Boston Dynamics, Inc. (“Boston Dynamics”)
+                       Software Development Kit License
+                             (20191101-BDSDK-SL)
+
+Copyright 2021 Boston Dynamics, Inc. All rights reserved.
+
+DOWNLOADING, REPRODUCING, DISTRIBUTING OR OTHERWISE USING THE SOFTWARE
+CONSTITUTES ACCEPTANCE OF THIS LICENSE.  THE SOFTWARE MAY NOT BE USED EXCEPT AS
+EXPRESSLY AUTHORIZED UNDER THIS LICENSE.
+
+The Boston Dynamics Software Development Kit (the “SDK Software”) is protected
+by copyright law and international copyright treaties.
+
+1. License:  Subject to the terms and conditions of this agreement, you are
+hereby granted a non-exclusive, terminal, worldwide, royalty-free license to
+use, publish, display, reproduce, modify, create derivative works for and
+distribute in source code and object code form the SDK Software.
+
+2. Conditions: 
+
+(a) Any distribution of the SDK Software must include a complete copy of this
+license and must retain all copyright and other proprietary notices.  The SDK
+Software that is distributed (including modified versions of the SDK Software)
+shall be subject to the terms and conditions of this license.
+
+(b) The SDK Software may not be combined or merged with other software in any
+manner that would cause the SDK Software to become subject to terms and
+conditions which differ from those of this license.
+
+(c) The SDK Software is licensed solely and exclusively for use with products
+offered for sale by Boston Dynamics, Inc. (“BD Products”).  Use of the SDK
+Software with simulators and emulators is not prohibited so long as it is a
+software based simulation / emulation. Use with any other hardware is strictly
+prohibited.
+
+(d) Licensee shall not use the name or any trademark of Boston Dynamics
+(including those of its licensors) to endorse or promote products without prior
+written consent of the owner of the name or trademark.
+
+(e) Modified versions of the SDK Software must be conspicuously marked as such.
+
+(f) Use of the SDK Software with a BD Product may require the use of a license
+key, app token or similar item (“License Key”).  License Keys may be separately
+issued by or on behalf of Boston Dynamics in its discretion.
+
+(g) This license shall be governed by the laws of Massachusetts, without regard
+to its conflict of laws rules.  The SDK Software shall only be used in
+compliance with all applicable laws and regulations, including without
+limitation export control laws.
+
+(h) All rights not expressly granted hereunder are reserved.
+
+3. WARRANTY DISCLAIMER: THE SDK SOFTWARE AND ANY RELATED INFORMATION AND/OR
+ADVICE IS PROVIDED ON AN “AS IS” BASIS, WITHOUT REPRESENTATIONS, GUARANTEES OR
+WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, ORAL OR WRITTEN, INCLUDING WITHOUT
+LIMITATION, WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+TITLE AND NON-INFRINGEMENT. Boston Dynamics has no obligation to provide
+software support or updates.
+
+4. LIMITATION OF LIABILITY: TO THE MAXIMUM EXTENT PERMITTED BY LAW BOSTON
+DYNAMICS (INCLUDING ITS LICENSORS) SHALL NOT BE LIABLE FOR ANY DAMAGES ARISING
+FROM OR RELATED TO THE SDK SOFTWARE, ITS USE OR ANY RELATED INFORMATION AND/OR
+SERVICES, INCLUDING BUT NOT LIMITED TO ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, PUNITIVE, EXEMPLARY, CONSEQUENTIAL OR ANALOGOUS DAMAGES (INCLUDING
+WITHOUT LIMITATION ANY DAMAGES RESULTING FROM LOSS OF USE, DATA, REVENUE,
+PROFITS, OR SAVINGS, COMPUTER DAMAGE OR ANY OTHER CAUSE), UNDER ANY LEGAL
+THEORY (INCLUDING WITHOUT LIMITATION CONTRACT, WARRANTY, TORT, NEGLIGENCE,
+STRICT OR PRODUCT LIABILITY), EVEN IF IT HAS BEEN INFORMED OF THE POSSIBILITY
+OF SUCH DAMAGES.  Some jurisdictions do not permit the exclusion or limitation
+of liability for consequential, incidental or other damages, and, as such, some
+portion of the above limitation may not apply.  In such jurisdictions,
+liability is limited to the greatest extent permitted by law.
+
+
+MIT License
+
+Copyright (c) 2022 MASKOR & Boston Dynamics AI Institute
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+BSD 3-Clause License
+
+Copyright (c) 2021, Clearpath Robotics Inc.
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+
+3. Neither the name of the copyright holder nor the names of its
+   contributors may be used to endorse or promote products derived from
+   this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
