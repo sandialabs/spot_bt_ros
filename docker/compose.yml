@@ -1,0 +1,109 @@
+services:
+  # Base Sandia ROS image
+  base:
+    image: spot_bt_ros:base
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: base
+      args:
+        - ARCH=${ARCH:-amd64}
+        - MSG_VERSION=4.1.1
+        - SDK_VERSION=4.1.1
+    # Interactive shell
+    stdin_open: true
+    tty: true
+    # Networking and IPC for ROS 2
+    network_mode: host
+    ipc: host
+    # Needed to display graphical applications
+    privileged: True
+    environment:
+      # Allows graphical programs in the container.
+      - DISPLAY=${DISPLAY}
+      - QT_X11_NO_MITSHM=1
+      - NVIDIA_DRIVER_CAPABILITIES=all
+    volumes:
+      # Allows graphical programs in the container.
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - ${XAUTHORITY:-$HOME/.Xauthority}:/root/.Xauthority
+
+  # ROS spot_ros2 overlay container
+  overlay:
+    extends: base
+    image: spot_bt_ros:overlay
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: overlay
+
+  # ROS visualization container
+  # rviz:
+  #   extends: overlay
+  #   image: cee-gitlab.sandia.gov:4567/inspecta/spot_docker/ros:viz
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #     target: viz
+  #   deploy:
+  #     resources:
+  #       reservations:
+  #         devices:
+  #           - driver: nvidia
+  #             count: 1
+  #             capabilities: [gpu]
+  #   command: ros2 launch spot_description description.launch.py
+
+  # ROS Spot driver
+  # spot-driver:
+  #   extends: base
+  #   image: spot_bt_ros:overlay
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #     target: overlay
+  #   deploy:
+  #     resources:
+  #       reservations:
+  #         devices:
+  #           - driver: nvidia
+  #             count: 1
+  #             capabilities: [gpu]
+  #   command: ros2 launch spot_driver spot_driver.launch.py has_arm:=true stitch_front_images:=true
+
+  # Inspecta Autonomy
+  # spot-autonomy:
+  #   extends: base
+  #   image: spot_bt_ros:deploy
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #     target: deploy
+  #   deploy:
+  #     resources:
+  #       reservations:
+  #         devices:
+  #           - driver: nvidia
+  #             count: 1
+  #             capabilities: [gpu]
+  #   command: ros2 launch inspecta_bringup autonomy.launch.py has_arm:=true stitch_front_images:=true
+
+  # ROS developer container
+  devel:
+    extends: overlay
+    image: spot_bt_ros:devel
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: devel
+      args:
+        - UID=${UID:-1000}
+        - GID=${GID:-1000}
+        - USERNAME=${USER:-spot}
+        # Interactive shell
+    user: ${USER:-spot}
+    volumes:
+      # spot_bt_ros workspace
+      - ${HOME}/Developer/ros/inspecta_ws:/home/${USERNAME}/inspecta_ws
+      - /dev:/dev
+    command: sleep infinity

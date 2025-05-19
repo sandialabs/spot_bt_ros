@@ -1,0 +1,11 @@
+std_msgs/Header header
+string action
+geometry_msgs/PoseStamped goal
+float64[] options
+---
+std_msgs/Header header
+bool success
+string message
+---
+std_msgs/Header header
+string feedback

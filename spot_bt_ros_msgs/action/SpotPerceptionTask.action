@@ -1,0 +1,11 @@
+std_msgs/Header header
+string action
+---
+std_msgs/Header header
+int64[] fiducials
+bosdyn_api_msgs/WorldObject[] objects
+bool success
+string message
+---
+std_msgs/Header header
+string feedback

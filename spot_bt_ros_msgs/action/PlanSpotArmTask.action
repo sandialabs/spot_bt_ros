@@ -1,0 +1,15 @@
+std_msgs/Header header
+string action
+geometry_msgs/PoseStamped target
+bosdyn_api_msgs/WorldObject world_object
+string frame
+float64[] options
+---
+std_msgs/Header header
+bool success
+geometry_msgs/PoseStamped goal_pose
+string frame
+string message
+---
+std_msgs/Header header
+string feedback

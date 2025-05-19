@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>spot_bt_ros</name>
+  <version>0.2.0</version>
+  <description>Behavior Tree ROS 2 metapackage for Boston Dynamics' Spot robot.</description>
+  <maintainer email="zmkakis@sandia.gov">Zahi Kakish</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>spot_bt_ros_bringup</exec_depend>
+  <exec_depend>spot_bt_ros_cpp</exec_depend>
+  <exec_depend>spot_bt_ros_msgs</exec_depend>
+  <exec_depend>spot_bt_ros_node</exec_depend>
+  <exec_depend>spot_bt_ros_py</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
